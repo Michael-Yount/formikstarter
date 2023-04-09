@@ -38,7 +38,7 @@ function App() {
   return (
     <div>
       <form onSubmit={formik.handleSubmit}>
-        <div>Email:</div>
+        <div>Email/Username:</div>
           <input 
           id="emailField"
           type="text"
