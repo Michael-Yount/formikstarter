@@ -1,15 +1,6 @@
 import React from "react";
 import {useFormik} from 'formik';
 
-/*const emailValidation = email => {
-  if (
-    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-      email,
-    )
-  ) {
-    return null;
-  }
-}*/
 
 function App() {
   const formik = useFormik({
@@ -49,9 +40,6 @@ function App() {
           {formik.errors.email ? ( 
           <div id="emailError" style={{color: "red"}} >{formik.errors.email}</div>) : null} 
 
-
-
-
         <div>Password:</div>
           <input 
           id="pswField"
@@ -63,8 +51,6 @@ function App() {
 
           {formik.errors.password ? ( 
           <div id="emailError" style={{color: "red"}} >{formik.errors.password}</div>) : null} 
-
-
 
         <br />
         <button id="submitBtn" type="submit">Submit</button>
